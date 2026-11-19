@@ -12,13 +12,7 @@ O problema proposto é a dificuldade de encontrar, em um único lugar, iniciativ
 
 O MVP apresenta um catálogo offline, sem cadastro obrigatório e sem coleta de dados pessoais. Todos os nomes de iniciativas, locais, horários e descrições são **fictícios**, criados para demonstração acadêmica. O app não oferece reservas, inscrições ou atendimento real. Não usa localização nem estima distâncias.
 
-### Conexão com os ODS
 
-- **ODS 10:** facilitar a descoberta de oportunidades de inclusão e acessibilidade.
-- **ODS 11:** dar visibilidade a iniciativas que fortalecem as comunidades.
-- **ODS 4:** conectar moradores a oportunidades de educação e inclusão digital.
-
-Essas contribuições são objetivos da proposta, não resultados de impacto já comprovados.
 
 ## Funcionalidades
 
@@ -57,37 +51,8 @@ As imagens abaixo são capturadas no emulador Android a partir do próprio app.
 |---|---|
 | ![Detalhes](docs/screenshots/04-detalhes.png) | ![Busca sem resultados](docs/screenshots/05-sem-resultados.png) |
 
-## Como executar
 
-1. Abra esta pasta como projeto no Android Studio e aguarde a sincronização Gradle.
-2. Use **JDK 17 ou 21** e instale o **Android SDK Platform 35** pelo SDK Manager.
-3. O Android Studio configura `local.properties` com o caminho do seu SDK. Esse arquivo não deve ser versionado.
-4. Execute o módulo `app` em um aparelho ou emulador com **Android 8.0/API 26 ou superior**.
 
-Não há chaves de API, credenciais ou configuração de backend. A primeira compilação exige internet para baixar dependências; depois de instalado, o app funciona offline.
-
-No Windows:
-
-```powershell
-.\gradlew.bat assembleDebug testDebugUnitTest lintDebug
-.\gradlew.bat connectedDebugAndroidTest
-```
-
-O segundo comando exige um aparelho ou emulador conectado. O APK fica em `app/build/outputs/apk/debug/app-debug.apk`. É um APK de depuração, adequado à avaliação e demonstração.
-
-### Versões fixadas
-
-| Ferramenta | Versão |
-|---|---|
-| Android Gradle Plugin | 8.9.2 |
-| Gradle Wrapper | 8.11.1 |
-| Kotlin e plugin Compose | 2.1.20 |
-| Compose BOM | 2025.04.01 |
-| Activity Compose | 1.10.1 |
-| compileSdk / targetSdk | 35 / 35 |
-| minSdk | 26 |
-
-A configuração do compilador Compose segue a [documentação Android](https://developer.android.com/develop/ui/compose/setup-compose-dependencies-and-compiler); a combinação AGP/Gradle segue as [notas do AGP 8.9](https://developer.android.com/build/releases/agp-8-9-0-release-notes).
 
 ## Arquitetura e origem dos dados
 
@@ -116,21 +81,3 @@ A tela principal usa `remember` e `mutableStateOf` para categoria, busca, detalh
 
 A interface usa rolagem vertical, textos com quebra de linha, largura máxima em telas grandes, padding de barras do sistema e carrosséis horizontais. A aparência é clara nesta versão.
 
-## Verificação
-
-Os testes unitários verificam quantidade mínima de registros e destaques, IDs únicos, cobertura de categorias, objetos em múltiplas categorias, combinação de filtros e normalização da busca. Os testes instrumentados verificam catálogo, filtro, detalhes/retorno e busca vazia/limpeza. Consulte [VALIDACAO.md](docs/VALIDACAO.md) para os resultados efetivamente obtidos.
-
-## Materiais e entrega
-
-- [Requisitos e rastreabilidade](docs/REQUISITOS.md).
-- [Documento de pitch e roteiro de gravação](docs/PITCH.md).
-- [Documento de apoio ao pitch em PDF](docs/Pitch-Bairro-Vivo.pdf).
-- Projeto completo com Gradle Wrapper e testes.
-
-### Pendências externas
-
-- Criar o repositório GitHub na conta do aluno, publicar o código e acrescentar o link à entrega.
-- Gravar o vídeo com imagem e voz do aluno, publicar no YouTube com acesso público e acrescentar o link. O material de apoio não substitui essa gravação.
-- Fazer a submissão no portal FIAP e conferir o ZIP enviado.
-
-**Prazos divergentes nos enunciados:** o PDF específico de Android informa 19/09/2026 às 23h00. O documento geral informa período de 04/11 a 19/11/2026 e entrega do pitch em 19/11 às 23h55; também há um resumo mencionando 23h. Verifique a área de trabalhos e as orientações do professor para o prazo aplicável. Não foi feita submissão automática.
