@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="br.com.bairrovivo.FluxoDoAppTest" tests="4" failures="0" errors="0" skipped="0" time="10.419" timestamp="2026-11-18T12:28:32" hostname="localhost">
+  <properties>
+    <property name="device" value="BairroVivo(AVD) - 16" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="buscaSemResultadosELimpeza" classname="br.com.bairrovivo.FluxoDoAppTest" time="4.348" />
+  <testcase name="filtroPorCategoria" classname="br.com.bairrovivo.FluxoDoAppTest" time="1.747" />
+  <testcase name="inicioEListaCompleta" classname="br.com.bairrovivo.FluxoDoAppTest" time="1.824" />
+  <testcase name="detalhesEVoltar" classname="br.com.bairrovivo.FluxoDoAppTest" time="1.666" />
+</testsuite>

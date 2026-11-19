@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.bairrovivo.data.IniciativaRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-18T12:27:22" hostname="DESKTOP-P876TO1" time="0.032">
+  <properties/>
+  <testcase name="catalogo cumpre cardinalidades e usa ids unicos" classname="br.com.bairrovivo.data.IniciativaRepositoryTest" time="0.024"/>
+  <testcase name="busca combina categoria e texto ignorando acentos" classname="br.com.bairrovivo.data.IniciativaRepositoryTest" time="0.007"/>
+  <testcase name="registro com varias categorias aparece em cada filtro" classname="br.com.bairrovivo.data.IniciativaRepositoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
